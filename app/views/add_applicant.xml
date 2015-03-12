@@ -1,0 +1,9 @@
+<Alloy>
+	<Collection src="applicant_cache"/>
+	<Window class="container">
+		<!-- Add TableView and  TableViewRow -->
+		<TableView>
+			<TableViewRow ></TableViewRow>
+		</TableView>
+	</Window>
+</Alloy>
