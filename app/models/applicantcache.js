@@ -6,14 +6,14 @@ exports.definition = {
 		    "phone": "text",
 		    "email": "text",
 		    "grad_term": "text",
-		    "grad_year": "int",
+		    "grad_year": "INTEGER",
 		    "major": "text",
-		    "visited":"datetime",
-		    "synced": "boolean"
+		    "visited":"text",
+		    "synced": "integer"
 		},
 		adapter: {
 			type: "sql",
-			collection_name: "applicant_cache"
+			collection_name: "applicantcache"
 		}
 	},
 	extendModel: function(Model) {

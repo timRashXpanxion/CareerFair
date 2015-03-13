@@ -1,10 +1,13 @@
 <Alloy>
+	 <Collection src="thing"/>
+	 <Collection src="applicantcache"/>
 	<Window class="container" title="My App">
-	 <ActionBar id="actionbar" platform="android" title="Home Screen" onHomeIconItemSelected="showInfo">
+	 
         <Menu>
             <MenuItem id="addApp" title="Add New" onClick="addApplicant" />
-            <MenuItem id="viewApplica" title="View Applicants" onClick="viewApplicants" />
-            <Label id="mainText">Welcome to Xpanxion Career Fair, Let's Get Started! Use the menu above</Label>
+            <MenuItem id="viewApplica" title="View Applicants" onClick="gotoViewApplicants" />
         </Menu>
+        <Label id="mainText">Welcome to Xpanxion Career Fair, Let's Get Started! Use the menu above</Label>
+		<Require id="viewAllApplicants" src="viewAllApplicants" platform="android"/>
 	</Window>
 </Alloy>
