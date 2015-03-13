@@ -1,0 +1,50 @@
+
+".container" : {
+   backgroundColor: 'white' 
+},
+"#firstNameInput" : {
+	top:10,
+	left:5,
+	color:'black',
+	width:300
+},
+"#lastNameInput" : {
+	top:10,
+	left:325,
+	color:'black',
+	width:300
+},
+"#phoneInput" : {
+	top:40,
+	left:10,
+	color:'black',
+	width:200,
+	keyboardType : Titanium.UI.KEYBOARD_NUMBER_PAD
+},
+"#emailInput" : {
+	top:40,
+	left:205,
+	color:'black',
+	width:400
+	
+},
+"#gradTermInput" : {
+	top:80,
+	left:10,
+	color:'black'
+	
+},
+"#gradYearInput" : {
+	top:80,
+	color:'black',
+	left:200
+},
+"#majorInput" : {
+	top:80,
+	color:'black',
+	left:350
+},
+"#insertApplicantButton" : {
+	top:110,
+	left:45
+}

@@ -12,20 +12,44 @@ var applicant= Alloy.createModel('applicantcache',{
 	visited:"2015-03-01 14:45:30",
 	synced:0
 	
-});
-console.log(myApplicants);
-myApplicants.add(applicant);
-applicant.save();
-var myThing= Alloy.Collections.thing;
-var thingy=Alloy.createModel('thing',{stuff:'Fruit',color:"green"});
-myThing.add(thingy);
-thingy.save();
+}).save();
+var applicant= Alloy.createModel('applicantcache',{
+	first_name: 'Sam',
+	last_name: 'Smart',
+	phone:"515-555-2222",
+	email:"sam@gmail.com",
+	grad_term:"Fall",
+	grad_year:"20",
+	major:"MIS",
+	visited:"2015-03-01 14:45:30",
+	synced:0
+	
+}).save();
+var applicant= Alloy.createModel('applicantcache',{
+	first_name: 'Daryl',
+	last_name: 'Dumb',
+	phone:"515-222-5555",
+	email:"daryl@gmail.com",
+	grad_term:"Fall",
+	grad_year:"Never",
+	major:"Leisure Studies",
+	visited:"2015-03-01 14:45:30",
+	synced:0
+	
+}).save();
+
 $.index.open();
 
-function addApplicant(event){
+function addNewApplicant(event){
+	
+	var addApplicantController = Alloy.createController("addApplicant",{}).getView();
+	addApplicantController.open();
 	Ti.API.info('Hello You clicked add applicant ');
 }
 
-function gotoViewApplicants(event){
+function ViewAllApplicants(event){
+	var viewAllApplicants=Alloy.createController("viewAllApplicants",{}).getView();
+	viewAllApplicants.open();
+	
 	Ti.API.info('Hello You clicked view applicant ');
 }

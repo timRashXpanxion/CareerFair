@@ -1,9 +1,15 @@
 <Alloy>
-<Window title="Applicants">
-        <TableView id="table" onClick="openDetail">
-            <HeaderView platform="android">
-                <Label id="header">Applicants</Label>
-            </HeaderView>
-        </TableView>
-    </Window>
+	<Collection src="applicantcache"/>
+	<Window title="Applicants" class="container" onClose="cleanup">
+		<Menu>
+            <MenuItem id="addApp" title="Add New" onClick="addNewApplicant" />
+            <MenuItem id="viewApplica" title="View Applicants" onClick="ViewAllApplicants" />
+        </Menu>
+		<ScrollableView dataCollection="applicantcache">
+            <View layout="vertical">
+                <Label text="{first_name} {first_name} - {major}" />
+                <Label text="{grad_term}-{grad_year}  {email}" />
+            </View>
+        </ScrollableView>
+	</Window>
 </Alloy>

@@ -1,13 +1,12 @@
 <Alloy>
-	 <Collection src="thing"/>
+	 
 	 <Collection src="applicantcache"/>
 	<Window class="container" title="My App">
 	 
         <Menu>
-            <MenuItem id="addApp" title="Add New" onClick="addApplicant" />
-            <MenuItem id="viewApplica" title="View Applicants" onClick="gotoViewApplicants" />
+            <MenuItem id="addApp" title="Add New" onClick="addNewApplicant" />
+            <MenuItem id="viewApplica" title="View Applicants" onClick="ViewAllApplicants" />
         </Menu>
         <Label id="mainText">Welcome to Xpanxion Career Fair, Let's Get Started! Use the menu above</Label>
-		<Require id="viewAllApplicants" src="viewAllApplicants" platform="android"/>
 	</Window>
 </Alloy>

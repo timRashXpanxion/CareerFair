@@ -1,0 +1,14 @@
+<Alloy>
+	<Window class="container">
+		<View layout="absolute">
+			<TextField id="firstNameInput" hintText="Enter First Name.."></TextField>
+			<TextField id="lastNameInput" hintText="Last Name"></TextField>
+			<TextField id="phoneInput" hintText="Phone Number"></TextField>
+			<TextField id="emailInput" hintText="Email"></TextField>
+			<TextField id="gradTermInput" hintText="Graduation  Term"></TextField>
+			<TextField id="gradYearInput" hintText="Graduation Year"></TextField>
+			<TextField id="majorInput" hintText="Major"></TextField>
+			<Button id="insertApplicantButton" onClick="nextStep">Save</Button>
+		</View>
+	</Window>
+</Alloy>
